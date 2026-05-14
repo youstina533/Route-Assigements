@@ -1,0 +1,306 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.container{
+    width:75%;
+    margin: auto;
+}
+.clear-fix{
+    clear: both;
+}
+
+.hero-section{
+    background-color: #FBFBFC;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 50px;
+}
+.hero-details{
+    width: 60%;
+    float:left;
+    margin-top: 30px;
+}
+.hero-details h1{
+    font-size: 60px;
+    font-weight: 900;
+}
+.hero-details p{
+    font-size: 20px;
+    color: #4A5565;
+    margin-bottom: 50px;
+}
+.start-btn, .learn-more-btn{
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.start-btn{
+    background-color: black;
+    color: white;
+    margin-right: 10px;
+}
+.learn-more-btn{
+    background-color: transparent;
+    color: #4a4b4f;
+    border: 2px solid #D6DAE0;
+}
+
+.hero-image{
+   width: 35%;
+   float: right;
+   margin-top: 90px;
+   margin-right: 10px;
+}
+.hero-image img{
+    width: 100%;
+    border-radius: 10px;
+}
+.title, .benefit-cards{
+    text-align: center;
+}
+.title h2{
+    font-size: 40px;
+    font-weight: 900;
+}
+.title p{
+    color:#4A556F;
+    font-size: 22px;
+}
+.benefit-card .inner-1{
+    background-color: #DBEAFE;
+    border: 1px solid #c8ddf5;
+    padding-bottom: 10px;
+}
+ .benefit-card .inner-2{
+    background-color:#D0FAE5 ;
+    border: 1px solid #c7e7d6;
+    padding-bottom: 10px;
+}
+.benefit-card  .inner-3{
+    background-color:#F3E8FF;
+    border: 1px solid #dacce9;
+    padding-bottom: 10px;
+}
+.inner {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.benefit-card, .review-card{
+    width:33%;
+    float: left;
+    padding: 20px 10px;
+}
+.benefit-card{
+    text-align: center;
+}
+.benefit-card h3{
+    font-size: 22px;
+    font-weight: 900;
+}
+.outer-shape-1, .outer-shape-2, .outer-shape-3{
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin:30px 0px 30px 130px;
+}
+.outer-shape-1{
+    background-color: #155DFC;
+}
+.outer-shape-2{
+    background-color: #10B981;
+}
+.outer-shape-3{
+    background-color: #8B5CF6;
+}
+.inner-shape-1, .inner-shape-2, .inner-shape-3{
+    width: 35px;
+    height: 35px;
+    margin:18px 0px 18px 17px;
+    background-color: white;
+}
+
+.inner-shape-1{
+    border-radius: 10px;
+}
+.inner-shape-2{
+    border-radius: 50%;
+}
+.inner-shape-3{
+    border-radius: 5px;
+}
+.benefit-details h4{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 800;
+}
+.benefit-details p{
+    margin:0;
+    color: #656e81;
+    font-size: 14px;
+    padding: 20px 30px 30px 30px;
+}
+.more-benefits .image{
+    float:left;
+    width: 50%;
+    margin-top: 20px;
+}
+.more-benefits .image img{
+    width: 100%;
+    border-radius: 10px;
+}
+.more-benefits .content{
+    float:right;
+    width: 45%;
+
+}
+.content h3{
+    font-size: 30px;
+    margin:17px 0px ;
+    padding: 0;
+    
+}
+.content-data{
+    border-left:solid 4px black;
+    padding-left:20px
+}
+.content-data h4{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+.content-data p{
+    color:#4A5565;
+}
+.reviews-section{
+    margin:60px 0;
+    padding: 70px 0;
+    background-color: #FBFBFC; ;
+}
+.review-image img{
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+    float:left;
+    margin:30px 0px 15px 40px;
+}
+.review-title{
+    float:right;
+    margin:20px 50px 10px 0px;
+}
+.review-title h4{
+    font-size: 20px;
+    margin:20px 0px 10px 0px ;
+}
+.review-title p{
+    margin: 0;
+    padding: 0;
+    color:#5e6565;
+}
+.review-paragraph{
+    padding:0 22px 22px 22px;
+    color:#4c4e4e;
+    margin-left:11px;
+
+}
+.review-card .inner-1{
+    background-color:#EFF6FF ;
+    border: 1px solid #cbdcf2;
+    padding-bottom: 10px;
+}
+.review-card .inner-2{
+    background-color:#ECFDF5;
+    border: 1px solid #bfe0d0;
+    padding-bottom: 10px;
+}
+.review-card .inner-3{
+    background-color: #FAF5FF;
+    border: 1px solid #ddceec;
+    padding-bottom: 10px;
+}
+.success-numbers{
+    background-color: #F1F5F9;
+    border-radius: 20px;
+    border:1px solid #d8dadd;
+    text-align: center;
+    margin-top: 30px;
+}
+.number-field{
+    width:25%;
+    float: left;
+    margin:40px 0;
+}
+.number-field h4{
+    font-size: 40px;
+    margin: 0 0 15px 0 ;
+    
+}
+.number-field span{
+    color:#807e83;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.contact-form{
+    background-color: #F9FAFB;
+    border-radius: 10px;
+    padding: 50px;
+    margin-bottom: 60px;
+}
+label{
+    font-size: 20px;
+    color:#2a2a2b;
+}
+.first-name-input{
+    float: left;
+}
+.last-name-input{
+    float:right;
+    
+}
+.first-name-input input, .last-name-input input{
+    padding:25px 20px;
+    margin-top: 20px;
+    width: 450px;
+}
+input, option{
+    border-radius: 10px;
+    border:#D1D5DC 1px solid;
+    background-color: #F9FAFB;
+    font-size: 18px;
+}
+.email-input input, .phone-input input, select, textarea{
+    padding:25px 20px;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #F9FAFB;
+    border:#D1D5DC 1px solid;
+    color:#5a5a5c;
+}
+.input-div{
+    padding-top: 20px;
+}
+.contact-form button{
+    width:100%;
+    background-color: black;
+    color:white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin:20px 0;
+}
+.privacy-service{
+    text-align: center;
+    color: #4a4b4f;
+}
