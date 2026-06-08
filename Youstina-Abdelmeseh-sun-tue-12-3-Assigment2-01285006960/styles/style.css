@@ -17,7 +17,7 @@ body{
 
 .hero-section{
     background-color: #FBFBFC;
-    height: 90vh;
+    min-height: 90vh;
     overflow: hidden;
     position: relative;
     margin-bottom: 50px;
