@@ -997,7 +997,7 @@ footer{
 }
 
 @media screen and (max-width: 1280px) {
-    .nav-links, .nav-btn,.home-image span, .articles-section .articles-title .content-word {
+    .nav-links, .nav-btn,.home-image span, .articles-section .articles-title .content-word, .authors-title h2::before {
         display: none;
     }
     .sidebar-bars svg {
