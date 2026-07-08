@@ -1,0 +1,390 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body, html{
+   overflow-x: hidden;
+   max-width: 100%;
+}
+body{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    background-color: #FFFBEA;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    position: relative;
+    z-index: 10;
+    background-color:#ffffff;
+    border-bottom: 1px solid #FFEDD4;
+}
+nav .nav-band .navbar-icon{
+    color:white;
+    border-radius: 50%;
+    background:linear-gradient(to right, #FF5D00, #FE4229);
+    padding:10px 12px;
+    font-size: 1.19rem;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.1);
+}
+nav .nav-band .nav-title h3{
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding:0;
+    margin:0;
+}
+nav .nav-band .nav-title span{
+    color:#6A7282;
+    font-size: 0.9rem;
+}
+nav .navbar-nav .navbar-icon{
+    color:#4A5565;
+    font-size: 1.2rem;
+}
+nav .navbar-nav .navbar-icon:hover{
+    color:#FF5D00;
+}
+nav .navbar-nav .image-icon{
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+nav .navbar-nav .image-icon img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #FFB86A;
+    display: inline;
+}
+nav .navbar-nav .nav-link .icon-details{
+    display:none;
+    font-size: 0.9rem;
+    color:#4A5565;
+    margin-left: 5px;
+}
+.meals-div-section{
+    background-color: #FFFFFF;
+    margin:auto;
+    width:82%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+.meals-div-section .meal-image-inner{
+    position: relative;
+    height:650px;
+}
+.meals-div-section .meal-rate{
+    position:absolute;
+    top:25px;
+    left:30px;
+    background-color: white;
+    padding: 7px 13px;
+    display: inline-block;
+    font-size: 0.9rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    word-spacing: 2px;
+}
+.meals-div-section .meal-rate i{
+    color:#FDC700;
+}
+.meals-div-section .meal-rate .meal-rate-details{
+    font-size: 0.8rem;
+    color:#4A5565;
+}
+.meals-div-section .meal-rate .rate-no{
+    font-weight: 700;
+    color:black;
+    font-size: 0.9rem;
+}
+.meals-div-section .image-wrapper{
+    height:100%;
+}
+.meals-div-section .meal-image img{
+   object-fit: cover;
+   width: 100%;
+   height:100%;
+}
+.meals-div-section .meal-image .meal-properties{
+    position: absolute;
+    width:88%;
+    margin:auto;
+    bottom:30px;
+    left:30px;
+    background-color: #FFFFFF;
+    padding:17px 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.meals-div-section .meal-image .property-inner span{
+    display: block;
+}
+.meals-div-section .meal-image .property-inner .property-icon{
+    font-size: 1.3rem;
+}
+.meals-div-section .meal-image .property-inner .property-name{
+    font-size: 0.8rem;
+    color:#707684;
+}
+.meals-div-section .meal-image .property-inner .property-value{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.meal-image .time-property .property-icon i{
+    color:#FF6900;
+}
+.meal-image .cook-property .property-icon i{
+    color:#FB2C36;
+}
+.meal-image .servings-property .property-icon i{
+    color:#2B7FFF;
+}
+.meals-div-section .meal-details-inner{
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 650px;
+    scrollbar-width: thin;
+    scrollbar-color: #FFDBD2 white !important;
+    padding: 30px 50px 30px 30px;
+}
+.meals-div-section .meal-details::-webkit-scrollbar-thumb:hover {
+    scrollbar-color: #cd4320 white !important;
+}
+.meal-details-inner .meal-details-title .meal-making-level{
+    font-size: 0.7rem;
+    color:#168F48;
+    font-weight: 600;
+    background-color: #DBFCE7;
+    padding: 3px 8px;
+}
+.meal-details-inner .meal-details-title .meal-origin{
+    font-size: 0.7rem;
+    color:#3361EA;
+    font-weight: 600;
+    background-color: #DBEAFE;
+    padding: 3px 8px;
+}
+.meal-brief h2{
+    font-size: 2rem;
+    font-weight: 700;
+    color:#1A202C;
+    margin-bottom: 10px;
+}
+.meal-brief p{
+    font-size: 1rem;
+    color:#4A5565;
+    line-height: 1.5rem;
+}
+.save-share-icons{
+    text-align: center;
+}
+.save-share-icons .save-icon, .save-share-icons .share-icon{
+   font-size: 1rem;
+   color:#F54900;
+   padding:10px 12px;
+   border-radius: 10px;
+   background-color: #FFEDD4;
+   text-align: center;
+}
+.save-share-icons .save-icon:hover, .save-share-icons .share-icon:hover{
+    background-color: #FFD6A7;
+}
+.preparation-time-div{
+    padding: 15px;
+    background-color: #FEF2F2;
+    border-left:4px solid #F92E35;
+}
+.warning-div .warning-icon i{
+    font-size: 1.3rem;
+    color:#F82F3A;
+}
+.warning-div .preparation-time-details h4{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color:#A01E26;
+}
+.warning-div .preparation-time-details p{
+    color:#e95765;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin:0;
+    padding:0;
+}
+.tab-div{
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 250px;
+    scrollbar-width: thin;
+    scrollbar-color: #FFDBD2 white !important;
+}
+.tab-div::-webkit-scrollbar-thumb:hover {
+    scrollbar-color: #cd4320 white !important;
+}
+.meal-information .nav-tabs{
+    border:none;
+}
+.meal-information .nav-tabs .nav-link {
+    border:none;
+    font-size: 1rem;
+    color:#6A7282;
+}
+.meal-information .nav-tabs .nav-link.nav-link:hover{
+    color:#364153;
+}
+.meal-information .nav-tabs .active{
+   color:#F65C1A;
+   border-bottom: solid 2px #F65C1A;
+}
+.meal-information .tab-content{
+    border-top: 1px solid #E5E7EB;
+}
+.meal-information .ingredients-div {
+    background-color: #FFF9EC;
+}
+.meal-information .ingredient-line span{
+   color:white;
+   background-color: #FF6900;
+   font-size: 0.8rem;
+   border-radius: 50%;
+   display: inline-block;
+   padding:2px 5px 7px 5px;
+   width:20px;
+   height:20px;
+   text-align: center;
+   font-weight: 500;
+}
+.meal-information .ingredient-line p{
+    font-size: 0.9rem;
+    color:#364153;
+}
+.meal-information .instructions-div span{
+   color:white;
+   background-color: #FF6900;
+   font-size: 1rem;
+   border-radius: 10px;
+   padding-top: 8px;
+   margin: 0;
+   display: inline-block;
+   text-align: center;
+   vertical-align:middle;
+   width:40px;
+   height:40px;
+   font-weight: 500;
+   align-self: center;
+}
+.meal-information .instructions-div p{
+   font-size: 0.9rem;
+   color:#364153;
+   margin-top: 10px;
+   width: fit-content;
+}
+.nutrition-card-inner{
+    background-color: #F9FAFB;
+}
+.nutrition-card-inner .card-title .card-icon {
+   padding:7px 9px;
+   font-size: 0.9rem;
+}
+.nutrition-card-inner .card-title .card-property{
+    color:#364153;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.nutrition-card-inner .card-details span{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.fire-icon {
+    color:#F54900;
+    background-color: #FFEDD4;
+}
+.dumbbell-icon{
+    color:#155DFC;
+    background-color: #DBEAFE;
+}
+.wheat-icon{
+    color:#D08700;
+    background-color: #FEF9C2;
+}
+.droplet-icon{
+    color:#E7000B;
+    background-color: #FFE2E2;
+}
+.seedlibg-icon{
+    color: #00A63E;
+    background-color: #DBFCE7;
+}
+.cube-icon{
+    color:#E60076;
+    background-color: #FCE7F3;
+}
+.meal-information .chef-line{
+    border-left:#FFB900 4px solid;
+    background-color: #FFFBEB;
+}
+.meal-information .chef-line .right-icon{
+    padding:4px 3px 3px 3px;
+    font-size: 0.6rem;
+    color:white;
+    border-radius: 50%;
+    background-color: #E17100;
+    align-self: center;
+}
+.meal-information .chef-line .chef-tips{
+    color:#364189;
+    font-size: 0.9rem;
+}
+.button-div{
+    border-top: 1px solid #E5E7EB;
+}
+.button-div a{
+    background: linear-gradient(to right, #FF6400, #FB3035);
+    color:white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: transform 0.4s;
+    padding:10px 17px;
+}
+.button-div a:hover{
+    transform: scale(1.05);
+    color:white;
+    background: #F44600;
+}
+
+@media screen and (max-width:991px){
+    .navbar-nav{
+      align-items: start !important;
+    }
+    nav .navbar-nav .nav-link .icon-details{
+    display:inline-block;
+  }
+   .navbar-collapse ul{
+    border-top: 1px solid #FFEDD4;
+   }
+   .navbar-toggler i{
+    font-size: 1.5rem;
+   }
+   .navbar-toggler i:hover{
+    color:#FF5D00;
+   }
+   .meals-div-section{
+    margin:auto;
+    width:95%;
+   }  
+   .meals-div-section .meal-details-inner{
+    overflow-y: hidden;
+    height:auto;
+    margin-top: 20px;
+   }
+   .meals-div-section .meal-image img, .meals-div-section .meal-image{
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius:0px !important ;
+    border-bottom-right-radius: 0px;
+   }
+}
