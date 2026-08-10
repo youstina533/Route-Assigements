@@ -463,7 +463,7 @@ function showAllLanches(){
 
         `
     }
-    document.getElementById("launches-grid").innerHTML = allLanchesInfo;
+    document.getElementById("launches-grid").innerHTML = allLanchesInfo; //Lazm aktb deh awl 2abl ma aktb al function aly ta7teha 34an yekon feh HTML haslo inject 34an a3ml 3aleh al Function
     var allLaunchImage =document.querySelectorAll(".allLaunch-image");
     for(var y = 0 ; y< allLaunchImage.length; y++){
       allLaunchImage[y].addEventListener("error", function(e){
