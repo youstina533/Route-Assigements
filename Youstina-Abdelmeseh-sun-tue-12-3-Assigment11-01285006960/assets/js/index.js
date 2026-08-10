@@ -1,3 +1,28 @@
+// Bosy ya st al kl anty awl konty wa5da section kolo aly feh al 2 buttons wa 7ateteh feh al function showTodayInSpace()
+
+// fah anty b2a kan eh al mo4kla aly bt3mleha, howa ank konty feh awl file al js 
+// btktby :
+
+// var loadDataBtn = document.getElementById("load-date-btn");     // null — doesn't exist yet
+// var apodDateInput = document.getElementById("apod-date-input"); // null — doesn't exist yet
+
+// konty btnady 3alehm wa homa feh al HTML file, bs homa makano4 mawgoden feh al HTML asln !!!
+
+// tb al 7l aly howa katbo kan eh : Event Delegation 🔴🔴🔴
+// ya3ny lw feh event 3ayzah ye7sl l children kolhm, badl ma alf b loop 3alehm adef al event l2 adeh l parent beta3hm wa howa haydaf lehm kolhm 
+// "Whenever anything inside this section is clicked, run this function." That's it — one listener, attached once, forever.
+
+// fah ay haga btdas (wa mafe4 8er al 2 buttons aly homa load wa today)
+// fah sa3tha hay4of lw howa al haga aly id beta3ha "#load-date-btn" or "#today-apod-btn" wa lw haga menhm fah ye7sl haga mn al if or else if 
+
+// tb bardo eh al fekra .... 
+// an tarteb code aly feh al js file
+// 1- ana ba3ml function showTodayInSpace() aly heya bdef al html aly ana 4elto mn al HTML file mn awl, wa once any defto 
+// 2a2dr any aktb keda 
+// 2- var input = document.getElementById("apod-date-input"); 
+// la2eno 5alas b2a mawgod feh al HTML file bssb al showTodayInSpace() 
+// 3- bs wa 3amlt variable input 34an 2a2dr any a3rf al value beta3o wa ab3to l function    AnyDayInSpaceApi(input.value);
+
 var navLinks = document.querySelectorAll(".nav-link");
 var firstSection = document.getElementById("today-in-space");
 var firstNavLink = document.querySelector(".nav-link[data-section='today-in-space']");
