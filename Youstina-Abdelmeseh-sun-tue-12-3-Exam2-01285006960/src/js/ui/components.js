@@ -55,7 +55,20 @@ function initNavigation() {
         });
 
 }
+
+function hideAppLoadingOverlay(){
+  const overlay = document.getElementById("app-loading-overlay");
+  if(!overlay) return;
+
+  overlay.classList.add("opacity-0"); 
+  setTimeout(() => {
+    overlay.classList.add("loading");   
+    overlay.remove();                   
+  }, 500); 
+}
+
 export{
     showFirstLoadSections,
-    initNavigation
+    initNavigation,
+    hideAppLoadingOverlay 
 }
