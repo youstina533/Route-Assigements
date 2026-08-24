@@ -29,3 +29,4 @@ logMeal.deleteAllProducts();
 logMeal.deleteProduct();
 logMeal.showWeeklyStats();
 logMeal.showWeeklyOverview();
+uiLogic.hideAppLoadingOverlay();
