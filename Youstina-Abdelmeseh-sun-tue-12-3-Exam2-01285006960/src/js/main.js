@@ -3,6 +3,8 @@ import * as allMeals from "./pages/nutritionPage.js"
 import * as mealDetails from "./pages/mealDetails.js"
 import * as logMeal from "./pages/foodLog.js"
 import * as allProducts from "./pages/productScanner.js"
+
+try{
 uiLogic.showFirstLoadSections();
 uiLogic.initNavigation();
 allMeals.getAllMeals();
@@ -29,5 +31,9 @@ logMeal.deleteAllProducts();
 logMeal.deleteProduct();
 logMeal.showWeeklyStats();
 logMeal.showWeeklyOverview();
-
-uiLogic.hideAppLoadingOverlay();
+}
+catch (err) {
+  console.error("Startup error:", err); 
+} finally {
+  uiLogic.hideAppLoadingOverlay();
+}
