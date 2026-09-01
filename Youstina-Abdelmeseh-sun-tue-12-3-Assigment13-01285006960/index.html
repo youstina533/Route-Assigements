@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>   
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="A website that helps you to manage your tasks">
+        <meta name="keywords" content="Tasks,Manage,kanban">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="./Font Awesome Icons/css/all.min.css"/>
+        <link rel="stylesheet" href="./css/output.css">
+        <title>Kanban Board | Task Manager</title>
+    </head>
+    <body class="bg-[#F7F9FC] flex flex-col min-h-screen">
+        <nav>
+            <div class="nav-body p-4 bg-linear-to-r from-[#5438F6] to-[#9415FA]">
+                <div class="lg:container lg:mx-auto lg:px-17 flex justify-between">
+                   <h2 class="text-white text-[20px] font-bold">
+                    <span class="nav-icon text-white text-[23px]">
+                      <i class="fa-solid fa-table-columns"></i>
+                    </span>
+                    Kanban
+                   </h2>
+                   <button id="add-task-btn" class="add-task-btn py-1.5 px-2 bg-[#A749FB] rounded-lg hover:bg-[#B35EFC]">
+                        <span class="btn-icon text-white text-base">
+                           <i class="fa-solid fa-plus"></i>
+                        </span>
+                   </button>
+                </div>
+            </div> 
+        </nav>
+        <div id="modal">
+
+        </div>
+        <main class="flex-grow">
+            <div class="lg:container lg:mx-auto lg:px-16 my-7.5">
+                <div class="tasks-category-cards grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-5">
+                    <div class="task-category-card to-do-category-card p-4.5 rounded-xl bg-[#FBFCFD] border-2 border-[#eceff2]">
+                        <div class="task-category-card-inner to-do-category-card-inner">
+                            <div class="category-title-div flex gap-1 items-center">
+                                <span class="category-icon py-1.5 px-2 rounded-xl bg-[#F1F5F9] text-[#62748E]">
+                                  <i class="fa-solid fa-clipboard-list"></i>
+                                </span>
+                                <div class="category-title">
+                                    <h3 class="text-[#1D293D] text-[15px] font-bold leading-none">To Do</h3>
+                                    <span id="to-do-tasks-cards-index" class="text-[#90A1B9] text-[12px]">
+                                        
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="task-toDo-cards" class="task-toDo-cards sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-1">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task-category-card progress-category-card p-4.5 rounded-xl bg-[#FBFCFD] border-2 border-[#eceff2]">
+                        <div class="task-category-card-inner progress-category-card-inner">
+                            <div class="category-title-div flex gap-1 items-center">
+                                <span class="category-icon py-1.5 px-2 rounded-xl bg-[#FFFBEB] text-[#FFB900]">
+                                  <i class="fa-solid fa-spinner"></i>
+                                </span>
+                                <div class="category-title">
+                                    <h3 class="text-[#1D293D] text-[15px] font-bold leading-none">In Progress</h3>
+                                    <span id="progress-tasks-cards-index" class="text-[#90A1B9] text-[12px]">
+                                        
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="task-progress-cards" class="tasks-progress-cards sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-1">
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task-category-card complete-category-card p-4.5 rounded-xl bg-[#FBFCFD] border-2 border-[#eceff2]">
+                        <div class="task-category-card-inner complete-category-card-inner">
+                            <div class="category-title-div flex gap-1 items-center">
+                                <span class="category-icon py-1.5 px-2 rounded-xl bg-[#ECFDF5] text-[#00BC7D]">
+                                  <i class="fa-solid fa-circle-check"></i>
+                                </span>
+                                <div class="category-title">
+                                    <h3 class="text-[#1D293D] text-[15px] font-bold leading-none">complete</h3>
+                                    <span id="complete-tasks-cards-index" class="text-[#90A1B9] text-[12px]">
+
+                                    </span>
+                                </div>
+                            </div>
+                            <div id="task-complete-cards" class="tasks-complete-cards sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-1">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-div p-7 bg-[#131C30] text-center">
+              <p class="footer-content text-[#80A1B9] text-[14px]">
+                Made with 
+                <span class="heart class text-red-700">
+                    <i class="fa-solid fa-heart"></i>
+                </span>
+                by Route Academy
+              </p>
+            
+            </div>
+        </footer>
+    
+    <script type="module" src="./js/index.js"></script>
+    </body>
+</html>
+        
