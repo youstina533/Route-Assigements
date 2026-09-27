@@ -1,0 +1,6 @@
+.searchIconHover:hover{
+    border-radius: 15px;
+    border:1px solid #343434;
+    background-color: #161616;
+    color:#FE5E00;
+}

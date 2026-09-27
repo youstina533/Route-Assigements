@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+body, html{
+    direction: rtl;
+}
+html {
+  scroll-behavior: smooth;
+}
+body::selection{
+    background-color: #F97316;
+    color:white;
+}
+.active{
+    background-color: #FA5400;
+    border-radius:25px;
+    color:#FFFFFF;
+}
