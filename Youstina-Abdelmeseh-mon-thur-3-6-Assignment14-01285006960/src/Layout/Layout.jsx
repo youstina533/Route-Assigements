@@ -14,7 +14,7 @@ export default function Layout() {
   useEffect(() => {
     async function getPosts() {
       try {
-        let { data } = await axios.get('../../posts.json');
+        let { data } = await axios.get('/posts.json');
         setBlogs(data.posts);
         setCategories(data.categories);
         setSiteInfo(data.siteInfo);   // object
